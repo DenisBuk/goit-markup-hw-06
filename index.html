@@ -420,38 +420,48 @@
         </button>
 
 
-<form class="form" action="">
-  <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
-  <label class="form-group">
-    <span class="form-label" for="user-name">Имя</span>
-    <input class="form-input" type="" id="user-name">
-    <svg class="form-icon" width="" height="">
-      <use href=""></use>
+<form class="register-form" action="">
+  <strong class="register-form-title">Оставьте свои данные, мы вам перезвоним</strong>
+  <div class="register-form-group" role="group">
+  <label class="register-form-wrap">
+    <span class="register-form-label">Имя</span>
+    <input class="register-form-input" name="user-name" type="text">
+    <svg class="register-form-icon" width="12" height="12">
+      <use href="./images/icons/icons.svg#person"></use>
     </svg>
   </label>
-  <label class="form-group">
-    <span class="form-label" for="user-name">Телефон</span>
-    <input class="form-input" type="" id="user-name">
-    <svg class="form-icon" width="" height="">
-      <use href=""></use>
+  <label class="register-form-wrap">
+    <span class="register-form-label">Телефон</span>
+    <input class="register-form-input" type="text">
+    <svg class="register-form-icon" width="13" height="13">
+      <use href="./images/icons/icons.svg#phone"></use>
     </svg>
   </label>
-  <label class="form-group">
-    <span class="form-label" for="user-name">Почта</span>
-    <input class="form-input" type="" id="user-name">
-    <svg class="form-icon" width="" height="">
-      <use href=""></use>
+  <label class="register-form-wrap">
+    <span class="register-form-label">Почта</span>
+    <input class="register-form-input" type="text">
+    <svg class="register-form-icon" width="15" height="12">
+      <use href="./images/icons/icons.svg#email"></use>
     </svg>
   </label>
-  <label class="form-group">
-    <span class="form-label" for="user-name">Комментарий</span>
-    <textarea class="form-input" type="" id="user-name"></textarea>
-    <svg class="form-icon" width="" height="">
-      <use href=""></use>
-    </svg>
+  <label class="register-form-wrap">
+    <span class="register-form-label">Комментарий</span>
+    <textarea class="register-form-message" name="" rows="5" type="" placeholder="Введите текст"></textarea>
   </label>
+  </div>
+  <label class="register-form-agreement" for="">
+    <input class="" type="checkbox" name="agreement"> 
+    <svg>
+      <use href=""></use>
+      <use href=""></use>
+    </svg> 
+    <span class="register-form-agreement-text">
+      Соглашаюсь с рассылкой и принимаю
+      <a class="register-form-agreement-link" href="">Условия договора</a>
+    </span>
+  </label>
+<button class="register-form-button" type="submit">Отправить</button>
 </form>
-<button type="submit"></button>
       </div>
     </div>
     
