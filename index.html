@@ -425,7 +425,6 @@
   </form>
 </div>
 
-        
       </div>
       </div>
     </footer>
@@ -444,41 +443,42 @@
 <form class="register-form" action="">
   <strong class="register-form-title">Оставьте свои данные, мы вам перезвоним</strong>
   <div class="register-form-group" role="group">
-  <label class="register-form-wrap">
+  <label class="register-form-wrap" for="user-name">
     <span class="register-form-label">Имя</span>
-    <input class="register-form-input" name="user-name" type="text">
+    <input class="register-form-input" name="user-name" type="text" id="user-name">
     <svg class="register-form-icon" width="12" height="12">
       <use href="./images/icons/icons.svg#person"></use>
     </svg>
   </label>
-  <label class="register-form-wrap">
+  <label class="register-form-wrap" for="user-phone">
     <span class="register-form-label">Телефон</span>
-    <input class="register-form-input" name="user-phone" type="text">
+    <input class="register-form-input" name="user-phone" type="text" id="user-phone">
     <svg class="register-form-icon" width="13" height="13">
       <use href="./images/icons/icons.svg#phone"></use>
     </svg>
   </label>
-  <label class="register-form-wrap">
+  <label class="register-form-wrap" for="user-email">
     <span class="register-form-label">Почта</span>
-    <input class="register-form-input" name="user-email" type="text">
+    <input class="register-form-input" name="user-email" type="text" id="user-email">
     <svg class="register-form-icon" width="15" height="12">
       <use href="./images/icons/icons.svg#email"></use>
     </svg>
   </label>
   <label class="register-form-wrap">
     <span class="register-form-label">Комментарий</span>
-    <textarea class="register-form-message" name="" rows="5" type="" placeholder="Введите текст"></textarea>
+    <textarea class="register-form-message" name="message" rows="5" type="" placeholder="Введите текст"></textarea>
   </label>
   </div>
-  <label class="register-form-agreement" for="">
-    <input class="" type="checkbox" name="agreement"> 
-    <svg>
-      <use href=""></use>
-      <use href=""></use>
+
+  <label class="register-form-agreement" for="agreement">
+    <input class="register-checkbox visually-hidden" type="checkbox" name="agreement" id="agreement"> 
+    <svg class="register-icon" width="16" height="15">
+      <use class="register-icon-uncheck" href="./images/icons/icons.svg#checkbox"></use>
+      <use class="register-icon-check" href="./images/icons/icons.svg#check"></use>
     </svg> 
     <span class="register-form-agreement-text">
       Соглашаюсь с рассылкой и принимаю
-      <a class="register-form-agreement-link" href="">Условия договора</a>
+      <a class="register-form-agreement-link" href="" target="_blank" rel="noopener noreferrer">Условия договора</a>
     </span>
   </label>
 <button class="register-form-button" type="submit">Отправить</button>
