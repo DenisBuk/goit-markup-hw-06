@@ -717,6 +717,35 @@ img{
 
 }
 
+
+/** ===============
+     Footer - form
+    =============== **/
+
+.footer-form{
+    display: block;
+    margin-left: auto;
+}
+
+.footer-form-input{
+    width: 358px;
+    height: 50px;
+    padding: 15px;
+    margin-right: 12px;
+    margin-left: auto;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20/16);
+    color: var(--footer-primary-color);
+   
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background:var(--footer-color);
+    border-radius: 4px;
+}
+
+
 /** =============
  register-form-title
     ================== **/
@@ -788,6 +817,7 @@ img{
 .register-form-button{
     display: inline-flex;
     align-items: center;
+    gap:10px;
     min-width: 200px;
     font-family: inherit;
     font-weight: 700;
@@ -801,4 +831,8 @@ img{
     border-radius: 4px;
     border: none;
     cursor: pointer;
+}
+
+.register-form-button-icon{
+    fill: var(--white-color);
 }
