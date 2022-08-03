@@ -339,6 +339,10 @@ img{
 }
 
 .hero-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     padding: 10px 32px;
     min-width: 200px;
 
@@ -729,8 +733,11 @@ img{
     =============== **/
 
 .footer-form{
-    display: block;
     margin-left: auto;
+}
+
+.form{
+    display: flex;
 }
 
 .footer-form-input{
@@ -747,8 +754,9 @@ img{
    
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.3);
-    background:var(--footer-color);
+    background:transparent;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 
@@ -866,8 +874,6 @@ img{
     opacity: 1;
 }
 
-register-checkbox
-
 .register-form-agreement-text{
     display:block;
     font-weight: 400;
@@ -882,25 +888,7 @@ register-checkbox
     color: var(--blue-color);
 }
 
-.register-form-button{
-    display: inline-flex;
-    align-items: center;
-    gap:10px;
-    min-width: 200px;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30/16);
-    letter-spacing: 0.06em;
-    padding: 10px 55px;
-    color:var(--white-color);
-    background-color: var(--submit-btn);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-}
-
 .register-form-button-icon{
     fill: var(--white-color);
+    margin-left: 10px;
 }
