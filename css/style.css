@@ -874,7 +874,7 @@ img{
     opacity: 1;
 }
 
-.register-checkbox:hover + .register-icon + .register-icon-uncheck{
+.register-form-agreement:hover > .register-icon > .register-icon-uncheck{
     fill: var(--blue-color);
 }
 
