@@ -357,6 +357,11 @@ img{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    transition: background color var(--transition);
+}
+
+.hero-button:hover, .hero-button:focus{
+    background-color: var(--submit-btn);
 }
 
 /*index section */
@@ -816,7 +821,7 @@ img{
     border-radius: 4px;
     outline: transparent;
     cursor: pointer;
-    transition: border var(--transition), fill var(--transition) ;
+    transition: border var(--transition);
 }
 
 .register-form-input:hover, .register-form-input:focus,
@@ -834,6 +839,7 @@ img{
     top: 50%;
     transform: translateY(-50%);
     left: 15px;
+    transition: fill var(--transition);
 }
 
 .register-form-message {
@@ -858,6 +864,7 @@ img{
     gap:7px;
     margin-bottom: 30px;
     cursor: pointer;
+    transition: fill var(--transition);
 }
 
 .register-checkbox:checked + .register-icon .register-icon-uncheck{
@@ -874,8 +881,12 @@ img{
     opacity: 1;
 }
 
-.register-form-agreement:hover > .register-icon > .register-icon-uncheck,
-.register-form-agreement:focus > .register-icon > .register-icon-uncheck{
+.register-icon-uncheck{
+    transition: fill var(--transition);
+}
+
+.register-checkbox:hover + .register-icon  .register-icon-uncheck,
+.register-checkbox:focus + .register-icon  .register-icon-uncheck{
     fill: var(--blue-color);
 }
 
